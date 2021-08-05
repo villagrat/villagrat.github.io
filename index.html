@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <head>
-
+	<link rel="stylesheet" href="style.css">
+	<!-- fontAwesome -->
+	<script src="https://kit.fontawesome.com/841a176e81.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
 	<nav class="navbar" id="navbar">
@@ -26,22 +30,26 @@
 	</section>
 	
 	<!-- Info de Contacto -->
-	<section id="contact">
-		<h2>Info de contacto</h2>
-		<div class="contact">
-			<!-- en class va fontAwesome, ToDo buscar iconos de estas paginas y que quede lindo -->
+	<section id="contact-section">
+		<div class="section-title text-center">
+			<h2>Info de contacto</h2>
+		</div>
+		<div id="profile-link-container" class="text-center">
 			<!-- Gmail -->
-			<div>
-				<a href="" class="" target="_blank"></a>
+			<div class="contact">
+				<a title="villagrat@gmail.com" class="profile-link" href="mailto:villagrat@gmail.com" target="_blank">
+					<i class="fas fa-envelope"></i> Gmail</a>
 			</div>
 			<!-- Linkedin -->
-			<div>
-				<a href="" class="" target="_blank"></a>
+			<div class="contact">
+				<a href="https://www.linkedin.com/in/tomas-villagra-a11323219/" target="_blank">
+					<i class="fab fa-linkedin"></i> Linkedin</a>
 			</div>
 			<!-- Github -->
-			<div>
-				<a href="" class="" target="_blank"></a>
-			</div>
+			<div class="contact">
+				<a href="https://github.com/villagrat" class="" target="_blank">
+					<i class="fab fa-github"></i> Github</a>
+			</div>			
 		</div>
 	</section>
 </body>
