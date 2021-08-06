@@ -1,102 +1,139 @@
+/* NavBar && hyperlinks */
+header {
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex!important;
+  align-items: center!important;
+}
+header * {
+  display: inline!important;
+  font-size: 0.75em;
+}
+header li{
+  margin: 5 px;
+}
+main{
+  margin-top: 80px;
+  padding: 35px;
+}
 
 #navbar {
-    height: 100%;
-  }
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  margin-left: auto ;
+}
   
-  #nav-list {
-    align-items: center;
-    background: var(--main-text-color);
-    font-size: 20px;
-    height: 100%;
-    justify-content: flex-end;
-    list-style: none;
-  }
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: var(--main-text-color);
+  font-size: 20px;
+  height: 100%;
+  list-style: none;
+}
   
-  .nav-link {
-    color: var(--white);
-    cursor: pointer;
-    user-select: none;
-    padding: 16.5px;
-  }
-  
-  .underline {
-    display: inline-block;
-  }
-  
-  .underline:after {
-    background: #F6F2F1;
-    content: '';
-    display: block;
-    background: var(--white);
-    transition: 175ms;
-    width: 0px;
-  }
-  
-  .nav-link:hover {
-    background-color: #4a505ab7;
-  }
-  
-  .nav-link:hover .underline:after {
-    height: 2px;
-    width: 100%;
-  }
+.nav-link {
+  color: var(--white);
+  cursor: pointer;
+  user-select: none;
+  padding: 16.5px;
+
+}
+/* 
+ToDo
+1. animacion en hover @ navbar
+2. about section
+3. projects section
+4. link a CV en LaTeX
+5. general styling
+
+
+
+transform: translateY(5px);
+transition: all 0.25s ease;
+*/
+#nav-list a{
+  transition: all 0.25s ease!important;
+}
+#nav-list a:hover{
+  transform: translateY(5px)!important;
+}
+.nav-link:hover {
+  background-color: #ffdc14b7;
+
+}
 
 .nav-link > a, .nav-link > a:visited {
-    text-decoration:none;
-    color: var(--white);
+  text-decoration:none;
+  color: var(--white);
 }
 a{
     color: black!important;
 }
 a:link{
-    text-decoration: none !important;
+    text-decoration: none!important;
     font-size: 2em;
 }
 
-/* seccion de intro */
+/* Welcome section */
+h1{
+  font-family: 'Mukta', sans-serif;
+}
+h3{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+/* Intro section */
 
 
-/* seccion de projectos */
+/* Portfolio/projects section */
 
 
-/* seccion de contacto */
+/* Contact Info Section */
 #contact-section {
-    background-color: var(--main-text-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  background-color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
   
-  #contact-section .section-title {
-    padding: 35px;
-  }
+#contact-section .section-title {
+  padding: 35px;
+}
   
-  #contact-section h2 {
-    color: var(--white);
-  }
+#contact-section h2 {
+  color: var(--white);
+  font-family: 'Work Sans', sans-serif;
+}
   
-  #profile-link-container {
-    height: 50%;
-    margin: 0 auto 30px auto;
-    position: relative;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-  }
+#profile-link-container {
+  height: 50%;
+  margin: 0 auto 30px auto;
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Titillium Web', sans-serif;
+}
   
-  .contact {
-    margin: 15px;
-    transition: all 0.25s ease;
-  }
+.contact {
+  margin: 15px;
+  transition: all 0.25s ease;
+}
   
-  .contact:hover {
-    transform: translateY(5px);
-  }
+.contact:hover {
+  transform: translateY(5px);
+}
   
-  
-  .profile-link {
-    color: var(--white);
-    display: block;
-    font-size: 25px;
-    text-decoration: none;
-  }
+.profile-link {
+  color: var(--white);
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+}
