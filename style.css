@@ -1,6 +1,12 @@
+main{
+  background-color: rgb(230, 230, 230);
+}
+:root{
+  background-color: rgb(230, 230, 230);
+}
 /* NavBar && hyperlinks */
 header {
-  background-color: red;
+  background-color: #2b2b2b;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +16,7 @@ header {
   align-items: center!important;
 }
 header * {
-  display: inline!important;
+  display: inline-block;
   font-size: 0.75em;
 }
 header li{
@@ -44,28 +50,14 @@ main{
   padding: 16.5px;
 
 }
-/* 
-ToDo
-1. animacion en hover @ navbar
-2. about section
-3. projects section
-4. link a CV en LaTeX
-5. general styling
 
-
-
-transform: translateY(5px);
-transition: all 0.25s ease;
-*/
 #nav-list a{
   transition: all 0.25s ease!important;
+  color: #a7a7a7!important;
 }
 #nav-list a:hover{
   transform: translateY(5px)!important;
-}
-.nav-link:hover {
-  background-color: #ffdc14b7;
-
+  color: white!important;
 }
 
 .nav-link > a, .nav-link > a:visited {
@@ -89,11 +81,25 @@ h3{
   font-weight: 200;
   font-style: italic;
 }
-/* Intro section */
+/* 
+ToDo
+1. about section
+2. projects section
+3. link a CV en LaTeX
+4. general styling
+*/
+/* About section */
 
 
 /* Portfolio/projects section */
-
+#projects-section{
+  margin-top: 30px;
+}
+.projects-section-title h2{
+  font-family: 'Mukta', sans-serif;
+  font-weight: 50!important;
+  font-size: 2em;
+}
 
 /* Contact Info Section */
 #contact-section {
@@ -103,8 +109,9 @@ h3{
   justify-content: center;
 }
   
-#contact-section .section-title {
-  padding: 35px;
+#contact-section {
+  padding-top: 30px;
+  padding-bottom: 0px;
 }
   
 #contact-section h2 {
