@@ -1,8 +1,7 @@
 /* 
 ToDo
 1. link a CV en LaTeX @ recursos
-2. agregar foto c/ estilo redondelito @ about me
-3. vibe check
+2. vibe check
     .leida de reglas redundantes @ CSS
     .rehacer los ReadME de los proyectos en GitHub (baja prioridad)
 */
@@ -84,6 +83,7 @@ a:link{
 /* Welcome section */
 #welcome-section{
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 #welcome-container h1{
   font-family: 'Mukta', sans-serif;
@@ -96,58 +96,6 @@ a:link{
   font-size: calc(6px + 2.5vw);
 }
 
-/* About section */
-.about-section-title h2{
-  font-family: 'Work Sans', sans-serif;
-  text-decoration: underline;
-  text-align: center;
-  font-weight: 500 !important;
-  font-size: calc(6px + 2.8vw) !important;
-  color: black!important;
-}
-.about-section-body{
-  margin-top: 30px;
-}
-
-.about-section-body p{
-  font-family: 'Mukta', sans-serif;
-  font-size: calc(6px + 1.3vw);
-}
-
-.about-section-body a{
-  text-decoration: none;
-  font-size:  calc(6px + 1.3vw);
-}
-#about-section{
-  padding: 40px;
-}
-
-
-/* Barra de Iconos */
-.devicon-cplusplus-plain{
-  font-size: 3em;
-}
-.devicon-git-plain{
-  font-size: 3em;
-}
-.about-section-icons{
-  display: flex;
-  justify-content: space-around;
-  padding: 20px; 
-}
-.icon-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-}
-.icon-container h4{
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.4em;
-  font-weight: 700;
-}
 
 /* Portfolio/projects section */
 img {
@@ -157,7 +105,15 @@ img {
 #projects-section{
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  padding-top: 50px;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  /* 
+  aplicar un cambio sutil de color a title y a project-section-title
+                                               project-container
+  background-color: #d2d3d5; 
+  expandir el bg color a los costados, simil a como hacemos con el footer
+  */
 }
 .projects-container{
   display: grid;
@@ -212,6 +168,74 @@ div.relative{
   font-weight: 500!important;
   font-size: calc(6px + 2.8vw)!important;
 }
+/* About section */
+.about-section-title h2{
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 500 !important;
+  font-size: calc(6px + 2.8vw) !important;
+  color: black!important;
+}
+.about-section-body{
+  margin-top: 30px;
+}
+
+.about-section-body p{
+  font-family: 'Mukta', sans-serif;
+  font-size: calc(6px + 1.3vw);
+  text-align: center;
+}
+
+.about-section-body a{
+  text-decoration: none;
+  font-size:  calc(6px + 1.3vw);
+}
+#about-section{
+  padding-top: 90px;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+
+.about-image {
+  border-radius: 50%;
+  margin: 5px auto;
+  border: 1px solid lightgray;
+  width: 13%;
+}
+#about-section img{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Barra de Iconos */
+.devicon-cplusplus-plain{
+  font-size: 3em;
+}
+.devicon-git-plain{
+  font-size: 3em;
+}
+.about-section-icons{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; 
+}
+.icon-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+.icon-container h4{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+
 
 /* Contact Info Section */
 #contact-section {
