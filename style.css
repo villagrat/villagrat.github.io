@@ -1,3 +1,11 @@
+/* 
+ToDo
+1. link a CV en LaTeX @ recursos
+2. agregar foto c/ estilo redondelito @ about me
+3. vibe check
+    .leida de reglas redundantes @ CSS
+    .rehacer los ReadME de los proyectos en GitHub (baja prioridad)
+*/
 main{
   background-color: rgb(230, 230, 230);
 }
@@ -14,6 +22,7 @@ header {
   height: 80px;
   display: flex!important;
   align-items: center!important;
+  z-index: 1;
 }
 header * {
   display: inline-block;
@@ -61,14 +70,14 @@ main{
 }
 
 .nav-link > a, .nav-link > a:visited {
-  text-decoration:none;
-  color: var(--white);
+  text-decoration:none!important;
+
 }
 a{
     color: black!important;
 }
 a:link{
-    text-decoration: none!important;
+    text-decoration: none;
     font-size: 2em;
 }
 
@@ -86,18 +95,59 @@ a:link{
   font-style: italic;
   font-size: calc(6px + 2.5vw);
 }
-/* 
-ToDo
-1. about section
-2. @ projects section
-  re-host heroku pomodoro App @ villagrat-pomodoro-clock
-  correct ze link @  Ir a la página del proyecto
-3. Iconos de stack tecnologico
-4. link a CV en LaTeX
-5. general styling
-*/
-/* About section */
 
+/* About section */
+.about-section-title h2{
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 500 !important;
+  font-size: calc(6px + 2.8vw) !important;
+  color: black!important;
+}
+.about-section-body{
+  margin-top: 30px;
+}
+
+.about-section-body p{
+  font-family: 'Mukta', sans-serif;
+  font-size: calc(6px + 1.3vw);
+}
+
+.about-section-body a{
+  text-decoration: none;
+  font-size:  calc(6px + 1.3vw);
+}
+#about-section{
+  padding: 40px;
+}
+
+
+/* Barra de Iconos */
+.devicon-cplusplus-plain{
+  font-size: 3em;
+}
+.devicon-git-plain{
+  font-size: 3em;
+}
+.about-section-icons{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; 
+}
+.icon-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+.icon-container h4{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+}
 
 /* Portfolio/projects section */
 img {
@@ -165,19 +215,26 @@ div.relative{
 
 /* Contact Info Section */
 #contact-section {
-  background-color: var(--main-text-color);
+  box-sizing: border-box;
   display: flex;
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-bottom: -10%;
+  background-color: #043442;
   flex-direction: column;
   justify-content: center;
-}
-  
-#contact-section {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 0px;
 }
-  
+#contact-section a{
+  font-size: 2.3em!important;
+  color: #d2d3d5!important;
+}
+#contact-section h2{
+  font-size: 2.1em!important;
+  color: #d2d3d5!important;
+}
 #contact-section h2 {
-  color: var(--white);
   font-family: 'Work Sans', sans-serif;
 }
   
