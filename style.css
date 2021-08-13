@@ -109,8 +109,6 @@ img {
   padding-top: 50px;
   margin-top: -50px;
   margin-bottom: 30px;
-  margin-left: -1%;
-  margin-right: -1%;
   border-radius: 25px;
   background-color: #d2d3d5; 
 }
@@ -157,31 +155,6 @@ img {
 .project-tile-desc p{
   font-family: 'Mukta', sans-serif;
 }
-.pomodoro-pos{
-  position: absolute;
-  margin-top: -20%;
-  margin-left: -34%;
-}
-.calculator-pos{
-  position: absolute;
-  margin-top: -20%;
-  margin-left: 28%;
-}
-.drum-pos{
-  position: absolute;
-  margin-top: 15%;;
-  margin-left: 60%;
-}
-.quote-pos{
-  position: absolute;
-  margin-top: 26%;;
-  margin-left: -34%;
-}
-.markdown-pos{
-  position: absolute;
-  margin-top: 26%;;
-  margin-left: 28%;
-}
 
 #project-link{
   min-height: 40px;
@@ -205,7 +178,7 @@ img {
 }
 div.relative{
   position: relative;
-  top: 40px;
+  top: 25px;
 }
 .projects-section-title h2{
   font-family: 'Work Sans', sans-serif;
@@ -285,9 +258,9 @@ div.relative{
 #contact-section {
   box-sizing: border-box;
   display: flex;
-  margin-left: -4%;
-  margin-right: -4%;
-  margin-bottom: -4%;
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-bottom: -10%;
   background-color: #043442;
   flex-direction: column;
   justify-content: center;
